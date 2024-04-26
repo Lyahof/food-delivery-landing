@@ -9,9 +9,9 @@
 	align-items: center;
 	background-color: #fae5d3;
 
-	/*height задаётся, чтобы позже сделать position: sticky*/
 	height: 9.4rem;
 	padding: 0 4.2rem;
+	position: relative;
 }
 
 .logo{
@@ -27,7 +27,7 @@
 	list-style: none;
 	display: flex;
 	align-items: center;
-	gap: 3.2rem;
+	gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -119,6 +119,25 @@
 	font-weight: 700;
 }
 
+/*Mobile*/
+
+.btn-mobile-nav {
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: none;
+}
+.icon-mobile-nav {
+	height: 4.8rem;
+	width: 4.8rem;
+	color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+	display: none;
+}
+
 /**********************************/
 /*Featured in section*/
 /**********************************/
@@ -144,7 +163,6 @@
 
 .logos img {
 	height: 3.2rem;
-	/*сделать цветные картинки серыми*/
 	filter: brightness(0);
 	opacity: 60%;
 }
@@ -303,7 +321,7 @@
 	background-color: #fdf2e9;
 	display: grid;
 	grid-template-columns: 55fr 45fr;
-	align-items: center;/*решает проблему больших гапов между картинками справа при уменьшении экрана*/
+	align-items: center;
 }
 
 .testimonials-container {
@@ -538,6 +556,10 @@
 .footer {
 	padding: 12.8rem 0;
 	border-top: 1px solid #eee;
+}
+
+.grid--footer {
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .logo-col {
