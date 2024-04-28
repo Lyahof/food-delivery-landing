@@ -1,5 +1,5 @@
 /**********************************/
-/*Less 1344px*/
+/*Less than 1344px*/
 /**********************************/
 
 @media (max-width: 84em) {
@@ -17,7 +17,7 @@
 }
 
 /**********************************/
-/*Less 1200px*/
+/*Less than 1200px*/
 /**********************************/
 
 @media (max-width: 75em) {
@@ -56,7 +56,7 @@
 }
 
 /**********************************/
-/*Less 944px*/
+/*Less than 944px*/
 /**********************************/
 
 @media (max-width: 59em) {
@@ -116,10 +116,13 @@
 
 	.btn-mobile-nav {
 		display: block;
+		z-index: 999;
 	}
 
 	.main-nav {
-		background-color: rgba(255, 255, 255, 0.97);
+		background-color: rgba(255, 255, 255, 0.9);
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -133,6 +136,7 @@
 		transition: all 0.5s;
 
 		/*Hide navigation*/
+
 		opacity: 0;
 		pointer-events: none;
 		visibility: hidden;
@@ -145,11 +149,11 @@
 		transform: translateX(0);
 	}
 
-	.icon-mobile-nav[name="close-outline"] {
+	.nav-open .icon-mobile-nav[name="close-outline"] {
 		display: block;
 	}
 
-	.icon-mobile-nav[name="menu-outline"] {
+	.nav-open .icon-mobile-nav[name="menu-outline"] {
 		display: none;
 	}
 
@@ -166,14 +170,14 @@
 
 
 /**********************************/
-/*Less 704px*/
+/*Less than 704px*/
 /**********************************/
 
 @media (max-width: 44em) {
 
 	.section-how,
 	.section-meals,
-	.section-prising {
+	.section-pricing {
 		padding: 4.8rem 0;
 	}
 
@@ -212,7 +216,7 @@
 }
 
 /**********************************/
-/*Less 544px*/
+/*Less than 544px*/
 /**********************************/
 
 @media (max-width: 34em) {

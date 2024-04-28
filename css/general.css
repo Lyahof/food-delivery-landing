@@ -1,14 +1,3 @@
-/*
---- COLORS
-- Primary #e67e22
-- Tints
-#fae5d3
-
-Greys
-#555
-#333
-*/
-
 * {
 	padding: 0;
 	margin: 0;
@@ -17,7 +6,7 @@ Greys
 
 html {
 	font-size: 62.5%;
-	overflow-x: hidden; 
+	overflow-x: hidden;
 }
 
 body{
@@ -29,7 +18,7 @@ body{
 }
 
 /**********************************/
-/*Common components*/
+/*General components*/
 /**********************************/
 
 .container {
@@ -140,7 +129,6 @@ body{
 .btn--outline:hover,
 .btn--outline:active{
 	background-color: #fdf2e9;
-	/*Add border to the button*/
 	box-shadow: inset 0 0 0 3px #fff;
 }
 
